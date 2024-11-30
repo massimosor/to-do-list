@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>To-Do-Liste</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>To-Do-Liste</h1>
+        <form id="todo-form">
+            <div class="form-container">
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen..." required>
+                    <select id="category-select">
+                        <option value="Arbeit">Arbeit</option>
+                        <option value="Einkauf">Einkauf</option>
+                        <option value="Persönlich">Persönlich</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                    <button type="submit">Hinzufügen</button>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="search-input" placeholder="Aufgaben suchen...">
+                    <button type="button" id="clear-search">Leeren</button>
+                </div>
+            </div>
+            <div class="filter-container">
+                <label for="category-filter">Kategorie filtern:</label>
+                <select id="category-filter">
+                    <option value="Alle">Alle</option>
+                    <option value="Arbeit">Arbeit</option>
+                    <option value="Einkauf">Einkauf</option>
+                    <option value="Persönlich">Persönlich</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                </select>
+            </div>
+        </form>
+        <ul id="todo-list"></ul>
+
+        <script src="todo.js"></script>
+    </body>
+</html>

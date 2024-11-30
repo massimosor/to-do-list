@@ -1,0 +1,135 @@
+/* Basisstil für die gesamte Seite */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Titel der Seite */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling der Aufgabenliste */
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Jede Aufgabe als Listenelement */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Markierte Aufgaben als "erledigt" */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Stil für die Löschen-Button */
+.delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Hauptcontainer für die Formularzeile */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Abstand zwischen den Gruppen */
+}
+
+/* Eingabefelder und Buttons gruppieren */
+.input-group {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Gruppen haben gleiche Breite */
+}
+
+.input-group input {
+    flex: 1; /* Eingabefeld füllt den verfügbaren Platz */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px; /* Abgerundete Ecken links */
+    font-size: 16px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0; /* Abgerundete Ecken rechts */
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #45a049;
+}
+
+/* Button für die Suchleeren-Funktion */
+#clear-serach {
+    background-color: #ff4d4d;
+}
+
+#clear-search:hover {
+    background-color: #ff1a1a;
+}
+
+/* Styling für Dropdown-Menüs */
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Container für Filter-Dropdown */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.filter-container label {
+    font-size: 16px;
+    font-weight: bold;
+}
