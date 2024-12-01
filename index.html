@@ -13,11 +13,13 @@
                 <div class="input-group">
                     <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen..." required>
                     <select id="category-select">
+                        <option value="Keine Kategorie">Keine Kategorie</option>
                         <option value="Arbeit">Arbeit</option>
                         <option value="Einkauf">Einkauf</option>
                         <option value="Persönlich">Persönlich</option>
                         <option value="Sonstiges">Sonstiges</option>
                     </select>
+                    <input type="date" id="deadline-input">
                     <button type="submit">Hinzufügen</button>
                 </div>
                 <div class="input-group">
@@ -29,6 +31,7 @@
                 <label for="category-filter">Kategorie filtern:</label>
                 <select id="category-filter">
                     <option value="Alle">Alle</option>
+                    <option value="Keine Kategorie">Keine Kategorie</option>
                     <option value="Arbeit">Arbeit</option>
                     <option value="Einkauf">Einkauf</option>
                     <option value="Persönlich">Persönlich</option>

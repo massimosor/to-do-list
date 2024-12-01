@@ -10,11 +10,6 @@ Dies ist eine einfache und intuitive To-Do-Listen-Anwendung, die mit JavaScript,
 - **Suchfunktion:** Finden Sie schnell bestimmte Aufgaben mithilfe von Schlüsselwörtern.
 - **Kategoriefilter:** Filtern Sie Aufgaben basierend auf vordefinierten Kategorien.
 
-## Geplante Funktionen
-
-- **Verbessertes Design:** Modernisierung des Designs und der Benutzeroberfläche.
-- **Deadline-Funktion:** Möglichkeit, Aufgaben Deadlines zuzuweisen.
-
 ## Installation
 
 Folgen Sie diesen Schritten, um die To-Do-Liste zu verwenden:

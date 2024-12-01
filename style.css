@@ -1,123 +1,149 @@
 /* Basisstil für die gesamte Seite */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* Modernes Hellgrau */
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Titel der Seite */
 h1 {
     text-align: center;
-    color: #333;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #222;
+    font-weight: bold;
 }
 
+/* Allgemeine Buttons */
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin-left: 10px;
     border: none;
-    background-color: #4caf50;
+    background-color: #3b82f6; /* Blau für Modernität */
     color: white;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2563eb; /* Dunkleres Blau */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling der Aufgabenliste */
 #todo-list {
     list-style-type: none;
     padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 /* Jede Aufgabe als Listenelement */
 .todo-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin: 5px 0;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb; /* Leichte Umrandung */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sanfter Schatten */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Markierte Aufgaben als "erledigt" */
 .completed {
     text-decoration: line-through;
-    color: gray;
+    color: #9ca3af; /* Blasses Grau */
 }
 
-/* Stil für die Löschen-Button */
+/* Stil für die Löschen-Buttons */
 .delete-button {
-    background-color: #ff4d4d;
-    border: none;
-    padding: 5px 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #ef4444; /* Rot */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .delete-button:hover {
-    background-color: #ff1a1a;
+    background-color: #dc2626; /* Dunkleres Rot */
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.5);
 }
 
 /* Hauptcontainer für die Formularzeile */
 .form-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 10px; /* Abstand zwischen den Gruppen */
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 /* Eingabefelder und Buttons gruppieren */
 .input-group {
     display: flex;
     align-items: center;
-    flex: 1; /* Gruppen haben gleiche Breite */
+    flex: 1;
+    gap: 8px;
 }
 
 .input-group input {
-    flex: 1; /* Eingabefeld füllt den verfügbaren Platz */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px; /* Abgerundete Ecken links */
-    font-size: 16px;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.input-group button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #4caf50;
-    color: white;
-    font-size: 16px;
-    border-radius: 0 5px 5px 0; /* Abgerundete Ecken rechts */
-    cursor: pointer;
-}
-
-.input-group button:hover {
-    background-color: #45a049;
+.input-group input:focus {
+    border-color: #3b82f6; /* Blau beim Fokus */
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
 }
 
 /* Button für die Suchleeren-Funktion */
-#clear-serach {
-    background-color: #ff4d4d;
+#clear-search {
+    background-color: #ef4444;
+    font-size: 1rem;
 }
 
 #clear-search:hover {
-    background-color: #ff1a1a;
+    background-color: #dc2626;
 }
 
 /* Styling für Dropdown-Menüs */
 select {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-left: 5px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
+}
+
+select:focus {
+    border-color: #3b82f6;
+    outline: none;
+    background-color: #f9fafb;
 }
 
 /* Container für Filter-Dropdown */
@@ -125,11 +151,49 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin: 20px auto;
     gap: 10px;
 }
 
-.filter-container label {
-    font-size: 16px;
+/* Styling für Details */
+.task-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #374151;
+    gap: 6px;
+}
+
+.category-details {
+    font-style: italic;
+    color: #6b7280; /* Dezentes Grau */
+}
+
+.deadline-details {
+    display: flex;
+    align-items: center;
     font-weight: bold;
+    color: #111827; /* Kräftigeres Schwarz */
+}
+
+/* Styling für <time> Elemente */
+time {
+    font-size: 0.9rem;
+    color: #2563eb; /* Blau */
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: #f0f9ff; /* Heller Blauton */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+time.overdue {
+    color: #ef4444;
+    background-color: #ffe4e6; /* Heller Rotton */
+    font-weight: bold;
+}
+
+/* Zeit beim Hover */
+time:hover {
+    background-color: #c7d2fe; /* Leicht schimmernder Blau-Effekt */
+    color: #1e40af; /* Dunkler Blau beim Hover */
 }
