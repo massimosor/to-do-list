@@ -1,3 +1,21 @@
+ // Aktiviere Dark Mode
+ function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    // Speichere Präferenz in localStorage
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
+}
+
+// Gespeicherte Präferenz anwenden
+window.addEventListener('DOMContentLoaded', () => {
+    const darkModePreference = localStorage.getItem('dark-mode');
+    if (darkModePreference === 'enabled'){
+        document.body.classList.add('dark-mode');
+    };
+})
+
 // Warte, bis das DOM vollständig geladen ist, bevor der Code ausgeführt wird
 document.addEventListener('DOMContentLoaded', () => {
     //Elemente aus dem DOM abrufen

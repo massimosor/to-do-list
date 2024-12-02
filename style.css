@@ -11,7 +11,7 @@ body {
 /* Titel der Seite */
 h1 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
     font-size: 2rem;
     color: #222;
     font-weight: bold;
@@ -34,6 +34,12 @@ button {
 button:hover {
     background-color: #2563eb; /* Dunkleres Blau */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-container {
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
 }
 
 /* Styling der Aufgabenliste */
@@ -196,4 +202,54 @@ time.overdue {
 time:hover {
     background-color: #c7d2fe; /* Leicht schimmernder Blau-Effekt */
     color: #1e40af; /* Dunkler Blau beim Hover */
+}
+
+/* Dark Mode Style */
+body.dark-mode {
+    background-color: #1a202c;
+    color: #f7fafc;
+}
+
+body.dark-mode h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    color: #f7fafc;
+    font-weight: bold;
+}
+
+/* Buttons in Dark Mode */
+body.dark-mode button {
+    background-color: #2d3748;
+    color: #f7fafc;
+}
+
+body.dark-mode button:hover {
+    background: #4a5568;
+}
+
+/* Aufgabenliste in Dark Mode */
+body.dark-mode .todo-item {
+    background-color: #2d3748;
+    color: #f7fafc;
+    border: 1px solid #4a5568;
+}
+
+/* Inputs and Selects in Dark Mode */
+body.dark-mode input, body.dark-mode select{
+    background-color: #2d3748;
+    color: #f7fafc;
+    border: 1px solid #4a5568;
+}
+
+body.dark-mode input:focus, body.dark-mode select:focus{
+    background-color: #2d3748;
+    color: #f7fafc;
+    border-color: #63b3ed;
+    outline: none;;
+}
+
+body.dark-mode time.overdue {
+    background-color: #7f1d1d;
+    color: #f7fafc;
 }
